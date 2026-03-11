@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginExtNav", "PluginExtNav\PluginExtNav.csproj", "{C08FEDFC-AA3C-4975-A96E-C35F2744CC7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C08FEDFC-AA3C-4975-A96E-C35F2744CC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08FEDFC-AA3C-4975-A96E-C35F2744CC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08FEDFC-AA3C-4975-A96E-C35F2744CC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08FEDFC-AA3C-4975-A96E-C35F2744CC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5604784-186B-4725-952D-2C23EC0677D9}
+	EndGlobalSection
+EndGlobal
