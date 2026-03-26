@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PluginExtNav</RootNamespace>
     <AssemblyName>PluginExtNav</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -33,24 +33,30 @@
   <ItemGroup>
     <Reference Include="GMap.NET.Core">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\GMap.NET.Core.dll</HintPath>
-    </Reference>
+	  <Private>false</Private>
+	</Reference>
     <Reference Include="GMap.NET.WindowsForms">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\GMap.NET.WindowsForms.dll</HintPath>
-    </Reference>
+      <Private>false</Private>
+	</Reference>
     <Reference Include="MAVLink, Version=1.0.0.0, Culture=neutral, PublicKeyToken=38326cb7e06851fc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MAVLink.dll</HintPath>
-    </Reference>
+      <Private>false</Private>
+	</Reference>
     <Reference Include="MissionPlanner">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.exe</HintPath>
-    </Reference>
+      <Private>false</Private>
+	</Reference>
     <Reference Include="MissionPlanner.ArduPilot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.ArduPilot.dll</HintPath>
-    </Reference>
+      <Private>false</Private>
+	</Reference>
     <Reference Include="MissionPlanner.Controls">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Controls.dll</HintPath>
-    </Reference>
+      <Private>false</Private>
+	</Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

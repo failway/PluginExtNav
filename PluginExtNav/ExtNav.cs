@@ -59,22 +59,28 @@ namespace PluginExtNav
 
         private void SendExtNav(double lat, double lon)
         {
-            var msg = new mavlink_command_long_t(
-                param1: (float)(Environment.TickCount / 1000.0),
-                param2: 0f,
-                param3: float.NaN,
+            int lat_int = (int)(lat * 1e7);
+            int lon_int = (int)(lon * 1e7);
+
+            var msg = new mavlink_command_int_t(
+                param1: (float)(Environment.TickCount / 1000.0), // время (сек)
+                param2: 0.05f,   // latency (50ms)
+                param3: 2.0f,    // accuracy (метры)
                 param4: 0f,
-                param5: (float)lat,
-                param6: (float)lon,
-                param7: float.NaN,
+                x: lat_int,
+                y: lon_int,
+                z: float.NaN,    // ОБЯЗАТЕЛЬНО NaN
                 command: 43003,
                 target_system: (byte)MainV2.comPort.sysidcurrent,
                 target_component: (byte)MainV2.comPort.compidcurrent,
-                confirmation: 0
+                frame: (byte)MAV_FRAME.GLOBAL_INT,
+                current: 0,
+                autocontinue: 0
             );
-            
+
             MainV2.comPort.sendPacket(msg, msg.target_system, msg.target_component);
-            Console.WriteLine("ExtNav: Sending Packet");
+
+            Console.WriteLine($"ExtNav SENT: {lat_int}, {lon_int}");
         }
 
         public override bool Loop() => true;
